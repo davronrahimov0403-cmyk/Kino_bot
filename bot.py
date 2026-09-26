@@ -1,6 +1,5 @@
 
 CHANNEL_USERNAME=@afsungarmerlinkinokanal
-CHANNEL_USERNAME=@usta_akalar777
 
 import asyncio
 import logging
