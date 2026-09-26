@@ -290,13 +290,14 @@ async def messages(message: Message):
                 return
             query = message.text.strip()
 
-            async with aiosqlite.connect(DB_NAME) as db:
-                c = await db.execute("""
-                    SELECT code, title FROM movies
-                    WHERE code = ? OR title LIKE ?
-                    ORDER BY id DESC LIMIT 20
-                """, (query, f"%{query}%"))
-                rows = await c.fetchall()
+          async with aiosqlite.connect(DB_NAME) as db:
+    c = await db.execute("""
+        SELECT code, title, file_id
+        FROM movies
+        WHERE code = ?
+        LIMIT 1
+    """, (query,))
+    rows = await c.fetchall()
 
             del admin_state[uid]
 
