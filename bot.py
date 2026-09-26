@@ -1,9 +1,9 @@
-BOT_TOKEN=8628819274:AAGm3SohIIEio6GX9DRm7Pors47XQoBsYBg
+BOT_TOKEN=8628819274:AAETGSMYBohIq8Dyi3fZerN2BRLwPdUzEVs
 
 ADMIN_IDS=7365030714
 
-CHANNEL_USERNAME=@afsungarmerlinkinokanal
-CHANNEL_USERNAME=@afsungarmerlinkinokanal
+CHANNEL_USERNAME=t.me/afsungarmerlinkinokanal
+CHANNEL_USERNAME=t.me/usta_akalar777
 
 import asyncio
 import logging
