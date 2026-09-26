@@ -328,8 +328,8 @@ async def messages(message: Message):
         c = await db.execute("""
             SELECT code, title, file_id
             FROM movies
-            WHERE code = ? OR title LIKE ?
-            ORDER BY id DESC LIMIT 10
+           WHERE code = ?
+            LIMIT 1
         """, (query, f"%{query}%"))
         rows = await c.fetchall()
 
