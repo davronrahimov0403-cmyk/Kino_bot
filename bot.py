@@ -1,6 +1,5 @@
 
-CHANNEL_USERNAME=@afsungarmerlinkinokanal
-
+CHANNEL_USERNAME = "@afsungarnerlinkinokanal"
 import asyncio
 import logging
 import os
